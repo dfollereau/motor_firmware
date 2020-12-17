@@ -16,4 +16,6 @@ This design allows a distributed environment. Motors are remotely piloted, no hi
 $ cd protobuf
 $ generate_files.sh
 ```
-![LCD showing debug schema](./images/IMG_0020.jpg)
+
+# LCD
+<img src="https://github.com/dfollereau/motor_firmware/blob/main/images/IMG_0020.jpg" width="640" height="480">
