@@ -16,3 +16,4 @@ This design allows a distributed environment. Motors are remotely piloted, no hi
 $ cd protobuf
 $ generate_files.sh
 ```
+![LCD showing debug schema](./images/IMG_0020.jpg)
