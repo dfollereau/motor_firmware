@@ -5,4 +5,4 @@ This project aims to receive commands and pilot several stepper motors
 
 * Software/Design : MQTT <-> PROTOBUF <-> PYTHON <-> C++ <-> U8g2/StepperDriver * 
 
-This design allows a distributed environment. Motors are remotely piloted, no high-level logic here this repo only handle the communication protocol and sending appropriate commands to the motors.  
+This design allows a distributed environment. Motors are remotely piloted, no high-level logic here this repo only handle the communication protocol and sending appropriate commands to the motors. Blue LCD embarked with the robot and motors is showing debug informations.
