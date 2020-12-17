@@ -1,0 +1,66 @@
+syntax = "proto2";
+
+package steppers;
+
+message pb_motors {
+
+    enum ChangeState {
+        YES = 0;
+        NO = 1;
+    }
+
+    enum MotorCommand {
+        DRIVE = 0;
+        HALT = 1;
+        XMAX = 2;
+        YMAX = 3;
+        ZMAX = 4;
+        XMIN = 5;
+        YMIN = 6;
+        ZMIN = 7;
+    }
+
+    enum MotorName {
+        X = 0;
+        Y = 1;
+        Z = 2;
+    }
+
+    enum MotorDir {
+        CC = 0;
+        CCW = 1;
+    }
+
+    required string msgversion = 1;
+    optional string timestamp = 2;
+    optional bool manualmove = 3 [default = false];
+
+    message MotorX {
+        optional ChangeState chgstate = 1 [default = NO];
+        optional MotorCommand cmd = 2 [default = HALT];
+        optional MotorName motorname = 3 [default = X];
+        optional MotorDir dir = 4;
+        optional int32 steps = 5;
+        optional int32 rpm = 6;
+    }
+    message MotorY {
+        optional ChangeState chgstate = 1 [default = NO];
+        optional MotorCommand cmd = 2 [default = HALT];
+        optional MotorName motorname = 3 [default = Y];
+        optional MotorDir dir = 4;
+        optional int32 steps = 5;
+        optional int32 rpm = 6;
+    }
+    message MotorZ {
+        optional ChangeState chgstate = 1 [default = NO];
+        optional MotorCommand cmd = 2 [default = HALT];
+        optional MotorName motorname = 3 [default = Z];
+        optional MotorDir dir = 4;
+        optional int32 steps = 5;
+        optional int32 rpm = 6;
+    }
+    optional MotorX motorx = 4;
+    optional MotorY motory = 5;
+    optional MotorZ motorz = 6;
+}
+
