@@ -1,6 +1,4 @@
-syntax = "proto2";
-
-package steppers;
+import "nanopb.proto";
 
 message pb_motors {
 
@@ -31,8 +29,8 @@ message pb_motors {
         CCW = 1;
     }
 
-    required string msgversion = 1;
-    optional string timestamp = 2;
+    required string msgversion = 1 [(nanopb).max_size = 8];
+    optional string timestamp = 2 [(nanopb).max_size = 64];
     optional bool manualmove = 3 [default = false];
 
     message MotorX {
@@ -63,4 +61,3 @@ message pb_motors {
     optional MotorY motory = 5;
     optional MotorZ motorz = 6;
 }
-

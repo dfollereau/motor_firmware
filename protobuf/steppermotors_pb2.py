@@ -11,21 +11,23 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+import nanopb_pb2 as nanopb__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='proto_files/steppermotors.proto',
-  package='steppers',
+  package='',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=b'\n\x1fproto_files/steppermotors.proto\x12\x08steppers\"\xea\x08\n\tpb_motors\x12\x12\n\nmsgversion\x18\x01 \x02(\t\x12\x11\n\ttimestamp\x18\x02 \x01(\t\x12\x19\n\nmanualmove\x18\x03 \x01(\x08:\x05\x66\x61lse\x12*\n\x06motorx\x18\x04 \x01(\x0b\x32\x1a.steppers.pb_motors.MotorX\x12*\n\x06motory\x18\x05 \x01(\x0b\x32\x1a.steppers.pb_motors.MotorY\x12*\n\x06motorz\x18\x06 \x01(\x0b\x32\x1a.steppers.pb_motors.MotorZ\x1a\xf0\x01\n\x06MotorX\x12\x35\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x1f.steppers.pb_motors.ChangeState:\x02NO\x12\x33\n\x03\x63md\x18\x02 \x01(\x0e\x32 .steppers.pb_motors.MotorCommand:\x04HALT\x12\x33\n\tmotorname\x18\x03 \x01(\x0e\x32\x1d.steppers.pb_motors.MotorName:\x01X\x12)\n\x03\x64ir\x18\x04 \x01(\x0e\x32\x1c.steppers.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\x1a\xf0\x01\n\x06MotorY\x12\x35\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x1f.steppers.pb_motors.ChangeState:\x02NO\x12\x33\n\x03\x63md\x18\x02 \x01(\x0e\x32 .steppers.pb_motors.MotorCommand:\x04HALT\x12\x33\n\tmotorname\x18\x03 \x01(\x0e\x32\x1d.steppers.pb_motors.MotorName:\x01Y\x12)\n\x03\x64ir\x18\x04 \x01(\x0e\x32\x1c.steppers.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\x1a\xf0\x01\n\x06MotorZ\x12\x35\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x1f.steppers.pb_motors.ChangeState:\x02NO\x12\x33\n\x03\x63md\x18\x02 \x01(\x0e\x32 .steppers.pb_motors.MotorCommand:\x04HALT\x12\x33\n\tmotorname\x18\x03 \x01(\x0e\x32\x1d.steppers.pb_motors.MotorName:\x01Z\x12)\n\x03\x64ir\x18\x04 \x01(\x0e\x32\x1c.steppers.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\"\x1e\n\x0b\x43hangeState\x12\x07\n\x03YES\x10\x00\x12\x06\n\x02NO\x10\x01\"_\n\x0cMotorCommand\x12\t\n\x05\x44RIVE\x10\x00\x12\x08\n\x04HALT\x10\x01\x12\x08\n\x04XMAX\x10\x02\x12\x08\n\x04YMAX\x10\x03\x12\x08\n\x04ZMAX\x10\x04\x12\x08\n\x04XMIN\x10\x05\x12\x08\n\x04YMIN\x10\x06\x12\x08\n\x04ZMIN\x10\x07\" \n\tMotorName\x12\x05\n\x01X\x10\x00\x12\x05\n\x01Y\x10\x01\x12\x05\n\x01Z\x10\x02\"\x1b\n\x08MotorDir\x12\x06\n\x02\x43\x43\x10\x00\x12\x07\n\x03\x43\x43W\x10\x01'
-)
+  serialized_pb=b'\n\x1fproto_files/steppermotors.proto\x1a\x0cnanopb.proto\"\xf1\x07\n\tpb_motors\x12\x19\n\nmsgversion\x18\x01 \x02(\tB\x05\x92?\x02\x08\x08\x12\x18\n\ttimestamp\x18\x02 \x01(\tB\x05\x92?\x02\x08@\x12\x19\n\nmanualmove\x18\x03 \x01(\x08:\x05\x66\x61lse\x12!\n\x06motorx\x18\x04 \x01(\x0b\x32\x11.pb_motors.MotorX\x12!\n\x06motory\x18\x05 \x01(\x0b\x32\x11.pb_motors.MotorY\x12!\n\x06motorz\x18\x06 \x01(\x0b\x32\x11.pb_motors.MotorZ\x1a\xcc\x01\n\x06MotorX\x12,\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x16.pb_motors.ChangeState:\x02NO\x12*\n\x03\x63md\x18\x02 \x01(\x0e\x32\x17.pb_motors.MotorCommand:\x04HALT\x12*\n\tmotorname\x18\x03 \x01(\x0e\x32\x14.pb_motors.MotorName:\x01X\x12 \n\x03\x64ir\x18\x04 \x01(\x0e\x32\x13.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\x1a\xcc\x01\n\x06MotorY\x12,\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x16.pb_motors.ChangeState:\x02NO\x12*\n\x03\x63md\x18\x02 \x01(\x0e\x32\x17.pb_motors.MotorCommand:\x04HALT\x12*\n\tmotorname\x18\x03 \x01(\x0e\x32\x14.pb_motors.MotorName:\x01Y\x12 \n\x03\x64ir\x18\x04 \x01(\x0e\x32\x13.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\x1a\xcc\x01\n\x06MotorZ\x12,\n\x08\x63hgstate\x18\x01 \x01(\x0e\x32\x16.pb_motors.ChangeState:\x02NO\x12*\n\x03\x63md\x18\x02 \x01(\x0e\x32\x17.pb_motors.MotorCommand:\x04HALT\x12*\n\tmotorname\x18\x03 \x01(\x0e\x32\x14.pb_motors.MotorName:\x01Z\x12 \n\x03\x64ir\x18\x04 \x01(\x0e\x32\x13.pb_motors.MotorDir\x12\r\n\x05steps\x18\x05 \x01(\x05\x12\x0b\n\x03rpm\x18\x06 \x01(\x05\"\x1e\n\x0b\x43hangeState\x12\x07\n\x03YES\x10\x00\x12\x06\n\x02NO\x10\x01\"_\n\x0cMotorCommand\x12\t\n\x05\x44RIVE\x10\x00\x12\x08\n\x04HALT\x10\x01\x12\x08\n\x04XMAX\x10\x02\x12\x08\n\x04YMAX\x10\x03\x12\x08\n\x04ZMAX\x10\x04\x12\x08\n\x04XMIN\x10\x05\x12\x08\n\x04YMIN\x10\x06\x12\x08\n\x04ZMIN\x10\x07\" \n\tMotorName\x12\x05\n\x01X\x10\x00\x12\x05\n\x01Y\x10\x01\x12\x05\n\x01Z\x10\x02\"\x1b\n\x08MotorDir\x12\x06\n\x02\x43\x43\x10\x00\x12\x07\n\x03\x43\x43W\x10\x01'
+  ,
+  dependencies=[nanopb__pb2.DESCRIPTOR,])
 
 
 
 _PB_MOTORS_CHANGESTATE = _descriptor.EnumDescriptor(
   name='ChangeState',
-  full_name='steppers.pb_motors.ChangeState',
+  full_name='pb_motors.ChangeState',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -40,14 +42,14 @@ _PB_MOTORS_CHANGESTATE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=986,
-  serialized_end=1016,
+  serialized_start=869,
+  serialized_end=899,
 )
 _sym_db.RegisterEnumDescriptor(_PB_MOTORS_CHANGESTATE)
 
 _PB_MOTORS_MOTORCOMMAND = _descriptor.EnumDescriptor(
   name='MotorCommand',
-  full_name='steppers.pb_motors.MotorCommand',
+  full_name='pb_motors.MotorCommand',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -86,14 +88,14 @@ _PB_MOTORS_MOTORCOMMAND = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1018,
-  serialized_end=1113,
+  serialized_start=901,
+  serialized_end=996,
 )
 _sym_db.RegisterEnumDescriptor(_PB_MOTORS_MOTORCOMMAND)
 
 _PB_MOTORS_MOTORNAME = _descriptor.EnumDescriptor(
   name='MotorName',
-  full_name='steppers.pb_motors.MotorName',
+  full_name='pb_motors.MotorName',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -112,14 +114,14 @@ _PB_MOTORS_MOTORNAME = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1115,
-  serialized_end=1147,
+  serialized_start=998,
+  serialized_end=1030,
 )
 _sym_db.RegisterEnumDescriptor(_PB_MOTORS_MOTORNAME)
 
 _PB_MOTORS_MOTORDIR = _descriptor.EnumDescriptor(
   name='MotorDir',
-  full_name='steppers.pb_motors.MotorDir',
+  full_name='pb_motors.MotorDir',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -134,56 +136,56 @@ _PB_MOTORS_MOTORDIR = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1149,
-  serialized_end=1176,
+  serialized_start=1032,
+  serialized_end=1059,
 )
 _sym_db.RegisterEnumDescriptor(_PB_MOTORS_MOTORDIR)
 
 
 _PB_MOTORS_MOTORX = _descriptor.Descriptor(
   name='MotorX',
-  full_name='steppers.pb_motors.MotorX',
+  full_name='pb_motors.MotorX',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chgstate', full_name='steppers.pb_motors.MotorX.chgstate', index=0,
+      name='chgstate', full_name='pb_motors.MotorX.chgstate', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='cmd', full_name='steppers.pb_motors.MotorX.cmd', index=1,
+      name='cmd', full_name='pb_motors.MotorX.cmd', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motorname', full_name='steppers.pb_motors.MotorX.motorname', index=2,
+      name='motorname', full_name='pb_motors.MotorX.motorname', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='dir', full_name='steppers.pb_motors.MotorX.dir', index=3,
+      name='dir', full_name='pb_motors.MotorX.dir', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='steps', full_name='steppers.pb_motors.MotorX.steps', index=4,
+      name='steps', full_name='pb_motors.MotorX.steps', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='rpm', full_name='steppers.pb_motors.MotorX.rpm', index=5,
+      name='rpm', full_name='pb_motors.MotorX.rpm', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -201,54 +203,54 @@ _PB_MOTORS_MOTORX = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=258,
-  serialized_end=498,
+  serialized_start=249,
+  serialized_end=453,
 )
 
 _PB_MOTORS_MOTORY = _descriptor.Descriptor(
   name='MotorY',
-  full_name='steppers.pb_motors.MotorY',
+  full_name='pb_motors.MotorY',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chgstate', full_name='steppers.pb_motors.MotorY.chgstate', index=0,
+      name='chgstate', full_name='pb_motors.MotorY.chgstate', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='cmd', full_name='steppers.pb_motors.MotorY.cmd', index=1,
+      name='cmd', full_name='pb_motors.MotorY.cmd', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motorname', full_name='steppers.pb_motors.MotorY.motorname', index=2,
+      name='motorname', full_name='pb_motors.MotorY.motorname', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='dir', full_name='steppers.pb_motors.MotorY.dir', index=3,
+      name='dir', full_name='pb_motors.MotorY.dir', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='steps', full_name='steppers.pb_motors.MotorY.steps', index=4,
+      name='steps', full_name='pb_motors.MotorY.steps', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='rpm', full_name='steppers.pb_motors.MotorY.rpm', index=5,
+      name='rpm', full_name='pb_motors.MotorY.rpm', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -266,54 +268,54 @@ _PB_MOTORS_MOTORY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=501,
-  serialized_end=741,
+  serialized_start=456,
+  serialized_end=660,
 )
 
 _PB_MOTORS_MOTORZ = _descriptor.Descriptor(
   name='MotorZ',
-  full_name='steppers.pb_motors.MotorZ',
+  full_name='pb_motors.MotorZ',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='chgstate', full_name='steppers.pb_motors.MotorZ.chgstate', index=0,
+      name='chgstate', full_name='pb_motors.MotorZ.chgstate', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='cmd', full_name='steppers.pb_motors.MotorZ.cmd', index=1,
+      name='cmd', full_name='pb_motors.MotorZ.cmd', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motorname', full_name='steppers.pb_motors.MotorZ.motorname', index=2,
+      name='motorname', full_name='pb_motors.MotorZ.motorname', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=2,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='dir', full_name='steppers.pb_motors.MotorZ.dir', index=3,
+      name='dir', full_name='pb_motors.MotorZ.dir', index=3,
       number=4, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='steps', full_name='steppers.pb_motors.MotorZ.steps', index=4,
+      name='steps', full_name='pb_motors.MotorZ.steps', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='rpm', full_name='steppers.pb_motors.MotorZ.rpm', index=5,
+      name='rpm', full_name='pb_motors.MotorZ.rpm', index=5,
       number=6, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -331,54 +333,54 @@ _PB_MOTORS_MOTORZ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=744,
-  serialized_end=984,
+  serialized_start=663,
+  serialized_end=867,
 )
 
 _PB_MOTORS = _descriptor.Descriptor(
   name='pb_motors',
-  full_name='steppers.pb_motors',
+  full_name='pb_motors',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='msgversion', full_name='steppers.pb_motors.msgversion', index=0,
+      name='msgversion', full_name='pb_motors.msgversion', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=b'\222?\002\010\010', file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='timestamp', full_name='steppers.pb_motors.timestamp', index=1,
+      name='timestamp', full_name='pb_motors.timestamp', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=b'\222?\002\010@', file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='manualmove', full_name='steppers.pb_motors.manualmove', index=2,
+      name='manualmove', full_name='pb_motors.manualmove', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motorx', full_name='steppers.pb_motors.motorx', index=3,
+      name='motorx', full_name='pb_motors.motorx', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motory', full_name='steppers.pb_motors.motory', index=4,
+      name='motory', full_name='pb_motors.motory', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='motorz', full_name='steppers.pb_motors.motorz', index=5,
+      name='motorz', full_name='pb_motors.motorz', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -400,8 +402,8 @@ _PB_MOTORS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=1176,
+  serialized_start=50,
+  serialized_end=1059,
 )
 
 _PB_MOTORS_MOTORX.fields_by_name['chgstate'].enum_type = _PB_MOTORS_CHANGESTATE
@@ -434,26 +436,26 @@ pb_motors = _reflection.GeneratedProtocolMessageType('pb_motors', (_message.Mess
   'MotorX' : _reflection.GeneratedProtocolMessageType('MotorX', (_message.Message,), {
     'DESCRIPTOR' : _PB_MOTORS_MOTORX,
     '__module__' : 'proto_files.steppermotors_pb2'
-    # @@protoc_insertion_point(class_scope:steppers.pb_motors.MotorX)
+    # @@protoc_insertion_point(class_scope:pb_motors.MotorX)
     })
   ,
 
   'MotorY' : _reflection.GeneratedProtocolMessageType('MotorY', (_message.Message,), {
     'DESCRIPTOR' : _PB_MOTORS_MOTORY,
     '__module__' : 'proto_files.steppermotors_pb2'
-    # @@protoc_insertion_point(class_scope:steppers.pb_motors.MotorY)
+    # @@protoc_insertion_point(class_scope:pb_motors.MotorY)
     })
   ,
 
   'MotorZ' : _reflection.GeneratedProtocolMessageType('MotorZ', (_message.Message,), {
     'DESCRIPTOR' : _PB_MOTORS_MOTORZ,
     '__module__' : 'proto_files.steppermotors_pb2'
-    # @@protoc_insertion_point(class_scope:steppers.pb_motors.MotorZ)
+    # @@protoc_insertion_point(class_scope:pb_motors.MotorZ)
     })
   ,
   'DESCRIPTOR' : _PB_MOTORS,
   '__module__' : 'proto_files.steppermotors_pb2'
-  # @@protoc_insertion_point(class_scope:steppers.pb_motors)
+  # @@protoc_insertion_point(class_scope:pb_motors)
   })
 _sym_db.RegisterMessage(pb_motors)
 _sym_db.RegisterMessage(pb_motors.MotorX)
@@ -461,4 +463,6 @@ _sym_db.RegisterMessage(pb_motors.MotorY)
 _sym_db.RegisterMessage(pb_motors.MotorZ)
 
 
+_PB_MOTORS.fields_by_name['msgversion']._options = None
+_PB_MOTORS.fields_by_name['timestamp']._options = None
 # @@protoc_insertion_point(module_scope)

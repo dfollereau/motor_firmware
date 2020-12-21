@@ -6,16 +6,16 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
-PB_BIND(steppers_pb_motors, steppers_pb_motors, AUTO)
+PB_BIND(pb_motors, pb_motors, AUTO)
 
 
-PB_BIND(steppers_pb_motors_MotorX, steppers_pb_motors_MotorX, AUTO)
+PB_BIND(pb_motors_MotorX, pb_motors_MotorX, AUTO)
 
 
-PB_BIND(steppers_pb_motors_MotorY, steppers_pb_motors_MotorY, AUTO)
+PB_BIND(pb_motors_MotorY, pb_motors_MotorY, AUTO)
 
 
-PB_BIND(steppers_pb_motors_MotorZ, steppers_pb_motors_MotorZ, AUTO)
+PB_BIND(pb_motors_MotorZ, pb_motors_MotorZ, AUTO)
 
 
 
